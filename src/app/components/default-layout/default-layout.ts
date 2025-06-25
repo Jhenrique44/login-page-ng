@@ -7,5 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './default-layout.scss'
 })
 export class DefaultLayout {
-  @Input() title: string = '';
+  @Input() title: string = "";
+  @Input() primaryBtnText: string = "";
+  @Input() secondaryBtnText: string = "";
 }

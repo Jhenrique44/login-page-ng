@@ -13,9 +13,7 @@ main {
     justify-content: center;
   }
   .main-page {
-    
     gap: 1rem;
-    
 
     width: 80%;
     background-color: $background-color;
@@ -23,12 +21,59 @@ main {
     overflow-y: auto;
   }
   .side-form {
-    width: 20%;
     background-color: #f0f0f0;
     flex-grow: 0.3;
+    padding: 35px;
+    img {
+      margin-bottom: 30px;
+    }
     h2 {
-        font-size: 20px;
-        font-weight: bold;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 45px;
+    }
+    .btn-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+     
+      .divider { 
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        color: $grey-color;
+        font-weight: 400;
+        align-items: center;
+        gap: 20px;
+        text-transform: uppercase;
+        div { 
+          flex-grow: 1;
+          height: 2px;
+          background-color: $grey-color;
+        }
+      }
+      button {
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        padding: 12px 24px;
+        cursor: pointer;
+        &.primarybtn {
+          background-color: $primary-color;
+          color: #fff;
+          box-shadow: 0px 8px 12px rgba(148.23, 64.3393, 255, 0.2);
+        }
+        &.secondarybtn {
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
     }
   }
 }

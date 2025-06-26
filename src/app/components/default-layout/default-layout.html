@@ -4,16 +4,23 @@
     <h2>{{title}}</h2>
     <ng-content></ng-content>
     <div class="btn-section">
-
-        <button class="primarybtn" (click)="submit()">{{ primaryBtnText }}</button>
-        <div class="divider">
-            <div class=""></div>
-            <span>or</span>
-            <div class=""></div>
-        </div>
-        <button class="secondarybtn" (click)="navigate()">{{ secondaryBtnText }}</button>
+      <button
+        class="primarybtn"
+        (click)="submit()"
+        [disabled]="disablePrimaryBtn"
+      >
+        {{ primaryBtnText }}
+      </button>
+      <div class="divider">
+        <div class=""></div>
+        <span>or</span>
+        <div class=""></div>
+      </div>
+      <button class="secondarybtn" (click)="navigate()">
+        {{ secondaryBtnText }}
+      </button>
     </div>
-   </section>
+  </section>
   <section class="main-page">
     <h1>You Should, Move it!</h1>
     <img src="main-illustration.svg" alt="" />

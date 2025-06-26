@@ -5,6 +5,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 100%;
   section {
     height: 100%;
     display: flex;
@@ -13,17 +14,13 @@ main {
     justify-content: center;
   }
   .main-page {
-    gap: 1rem;
-
-    width: 80%;
-    background-color: $background-color;
-    padding: 20px;
-    overflow-y: auto;
+    gap: 8px;
+    flex-grow: 1;
+    background-color: $grey-color;
   }
   .side-form {
-    background-color: #f0f0f0;
     flex-grow: 0.3;
-    padding: 35px;
+    padding: 0 35px;
     img {
       margin-bottom: 30px;
     }
@@ -41,9 +38,9 @@ main {
       gap: 30px;
      
       .divider { 
+        display: flex;
         width: 100%;
         font-size: 14px;
-        display: flex;
         color: $grey-color;
         font-weight: 400;
         align-items: center;
@@ -64,6 +61,11 @@ main {
         background: transparent;
         padding: 12px 24px;
         cursor: pointer;
+
+        &:disabled{
+          opacity: 0.8;
+        }
+        
         &.primarybtn {
           background-color: $primary-color;
           color: #fff;

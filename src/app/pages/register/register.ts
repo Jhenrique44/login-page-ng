@@ -46,7 +46,7 @@ export class Register {
   }
   submit() {
     this.loginService
-      .login(this.signupForm.value.email, this.signupForm.value.password)
+      .signup(this.signupForm.value.name, this.signupForm.value.email, this.signupForm.value.password)
       .subscribe({
         next: () => this.toastService.success('Login successful'),
         error: () => this.toastService.error('Login failed, please try again!'),

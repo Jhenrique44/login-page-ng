@@ -10,10 +10,10 @@ export class LoginService {
 
   apiUrl: string = "http://localhost:8080/auth"
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
   login(email: string, password: string) {
-    return this.httpClient.post<LoginResponse>(this.apiUrl + "/login", {email, password}).pipe(
+    return this.httpClient.post<LoginResponse>(this.apiUrl + "/login", {email, password}, { withCredentials: true}).pipe(
       tap((value) => {
         sessionStorage.setItem('auth-token', value.token);
         sessionStorage.setItem('username', value.name);

@@ -41,3 +41,7 @@ To install Angular CLI if not already installed:
 
 ```bash
 npm install -g @angular/cli
+
+<img width="914" height="656" alt="image" src="https://github.com/user-attachments/assets/76410694-b1f0-4f5b-bfa0-0cba1175a19e" />
+
+

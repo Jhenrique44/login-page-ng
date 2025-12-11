@@ -40,8 +40,9 @@ Before you start, make sure you have:
 To install Angular CLI if not already installed:
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cl
+```
+<img width="914" height="656" alt="image" src="https://github.com/user-attachments/assets/07a988e1-57f2-412e-9a11-99e7a34529b3" />
 
-<img width="914" height="656" alt="image" src="https://github.com/user-attachments/assets/76410694-b1f0-4f5b-bfa0-0cba1175a19e" />
 
 
